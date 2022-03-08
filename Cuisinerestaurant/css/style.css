@@ -1,0 +1,235 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+
+}
+p,
+a,
+h3 {
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+h3 {
+  font-size: 14px;
+  color: darkorange;
+}
+h1,
+h2,
+h4 {
+  font-family: 'Yeseva One', cursive;
+
+}
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+h4 {
+  color: darkorange;
+  font-size: 30px;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 28px;
+  }
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  justify-content: space-around;
+  flex-basis: 66%;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.intro {
+  margin: 0 20% 0 40%;
+
+}
+.order-wrapper {
+  background: no-repeat url("../images/image04.jpg");
+  background-size: cover;
+}
+.order,
+.testimonials {
+  text-align: center;
+}
+.order ul {
+  justify-content: center;
+  }
+.imagebank {
+  margin: 40px 30px;
+}
+.hours {
+  display: flex;
+  justify-content: space-around;
+}
+.hours section {
+
+}
+footer {
+
+}
+.container{
+  padding-bottom: 75px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.button {
+  border-radius: 5px;
+  background: darkorange;
+  color: #fff;
+  padding: 10px;
+  vertical-align: text-top;
+}
+.alt{
+  border-radius: 0 5px 5px 0;
+}
+a.button:hover{
+  color: #000;
+}
+.intro p{
+  text-align: justify;
+}
+.intro p:last-of-type {
+  padding-bottom: 25px;
+}
+
+h1 {
+  padding-left: 10%;
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: 100;
+}
+h2 {
+  margin: 5px 0 20px 0;
+}
+.order li {
+  border-bottom: 2px solid lightgray;
+  padding: 10px 25px;
+}
+.order li:hover, a:hover {
+  color: darkorange;
+  border-color: darkorange;
+}
+.imagebank img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  padding: 5px 10px;
+}
+section span {
+  font: 20px 'Lato', sans-serif;
+}
+section span:last-child {
+  font-family: 'Yeseva One', cursive;
+}
+.testimonials img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.testimonials span:last-of-type {
+  color: gray;
+  font-size: 14px;
+}
+.testimonials p {
+  font-style: italic;
+  padding: 0 150px;
+}
+.first {
+  padding-left: 10%;
+}
+.first li {
+  padding-right: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+input {
+  padding: 8px 8px 8px 35px;
+  width: 30%;
+  font-family: 'Lato', sans-serif;
+  caret-color: darkorange;
+}
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+.hello {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.hello::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 125%;
+  top: -10%;
+  left: -85%;
+  z-index: -1;
+  background-image: url("../images/image02.jpg");
+  background-size: cover;
+  transform: scaleX(-1);
+
+}
+.intro-wrapper {
+  padding: 100px 0 100px 0;
+  position: relative;
+}
+.intro-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: no-repeat url("../images/image05.jpg");
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-position: -500px;
+  opacity: 0.5;
+}
+.special img{
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0 75%;
+}
