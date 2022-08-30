@@ -1,6 +1,10 @@
 # Portfolio Website: <a target="_blank" href="https://dbthurman.netlify.app">Visit Here</a>
 Portfolio site with links to my work and contact information.
 
+        <a target="_blank" href="https://dbthurman.netlify.app">
+            <img src="images/portfolio2.png" width="100%" alt="Portfolio"/>
+        </a>
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
