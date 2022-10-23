@@ -2212,6 +2212,23 @@ input, select, textarea {
 			height: 1000px;
 			object-fit: contain;
 		}
+
+/* Links */
+	.link-btns {
+		text-align: center;
+		margin-top: 1rem;
+	}
+	.project-links {
+    border: 2px solid #426696;
+    border-radius: .25rem;
+    color: #426696;
+    text-decoration: none;
+    padding: .25rem;
+	}	
+		a.project-links:hover {
+			border-bottom-color: #426696;
+		}
+
 /* List */
 
 	ol {
@@ -2672,18 +2689,20 @@ input, select, textarea {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 59%;
 		}
 
 			.features article .image img {
 				display: block;
 				width: 100%;
+				border: 1px solid #426696;
 			}
 
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			text-align: center;
+			width: 40%;
 		}
 
 			.features article .inner > :last-child {
